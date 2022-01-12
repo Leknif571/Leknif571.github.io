@@ -4,9 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BOUKADA Adel - Portfolio</title>
+    <link rel="stylesheet" href="Redirect.css">
+
+
+    <title>2KS-En construction</title>
 </head>
 <body>
-    <p>bientôt disponible</p>
+<div class="comm" id="particles-js">
+
+  <script src="particles.js" charset="utf-8"></script>
+  <script src="app.js" charset="utf-8"></script>
+      <div class="compte">
+        <center><h1 class="text">Error - Maintenance</h1></center>
+
+        <img class="logo" src="logo.png" alt="">
+
+        <script type="text/javascript">
+          const compte = document.querySelector(".compte");
+          const comm = document.querySelector(".comm");
+
+          const text = document.querySelector(".text");
+          const left = document.querySelector(".left");
+          const right = document.querySelector(".right");
+          const logo = document.querySelector(".logo");
+
+
+          comm.addEventListener("mousemove",(e)=>{
+            let xAxis = (window.innerWidth / 2 - e.pageX) / 15;
+            let yAxis = (window.innerHeight /2 - e.pageY) / 15;
+            console.log(xAxis);
+            console.log(yAxis);
+            compte.style.transform=`rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+            right.style.transform=`rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+            left.style.transform=`rotateY(-30deg) rotateX(${yAxis}deg)`;
+            logo.style.transform=`rotateY(${xAxis}deg) rotateX(-40deg)`;
+
+          });
+
+
+          comm.addEventListener("mouseenter",(e)=>{
+            compte.style.transform="none";
+            logo.style.transform="translateZ(150px)";
+            left.style.transform="translateZ(150px)";
+            right.style.transform="translateZ(150px)";
+            logo.style.transform="translateX(10px)";
+
+
+          });
+
+          comm.addEventListener("mouseleave",(e)=>{
+            compte.style.transform="all 0.5s ease";
+            compte.style.transform=`rotateY(0deg) rotateX(0deg)`;
+            logo.style.transform="translateZ(0px)";
+            logo.style.transform="translateX(0px)";
+          });
+
+        </script>
+
+
+        <p>
+          Oh, il semblerais que j'ai décider de faire un peu de changement !
+        </p>
+        <p>
+          Mon site web est actuellement en maintenance. En attendant l'accés de nouveau à mon site,
+          vous pouvez accéder à mon cv ou bien me retrouver sur LinkedIn !
+        </p>
+          <br>
+          <div class="mb-3">
+            <a class="btn-cv" href="">Télécharger mon cv</a>
+          </div>
+        <div >
+          <a class="btn-link" href="https://www.linkedin.com/in/adel-boukada-57190/"><img class="imgLink" src="http://culliganrecrute.fr/wp-content/uploads/2018/01/linkedin-icon.png" alt=""></a>
+        </div><!-- Display the countdown timer in an element -->
+
+
+  </div>
+</div>
+
+
+
 </body>
 </html>

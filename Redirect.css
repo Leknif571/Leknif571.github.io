@@ -1,0 +1,157 @@
+@font-face {
+  font-family: "glitch";
+  src: url("glitch.ttf");
+}
+
+@font-face {
+  font-family: "nasa";
+  src: url("nasalization-rg.ttf");
+}
+
+@font-face {
+  font-family: "code";
+  src: url("code.ttf");
+}
+
+html, body{
+
+    margin:0;
+    overflow: hidden;
+
+
+}
+#jours{
+font-size: 30px;
+}
+#heures{
+font-size: 30px;
+}
+#minutes{
+font-size: 30px;
+}
+#secondes{
+font-size: 30px;
+}
+body{
+  perspective: 900px;
+}
+html{
+    background-image: url(mobres.jpg);
+
+
+}
+
+#particles-js{
+height: 100%;
+background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7);),url(mobres.jpg);
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+}
+
+.compte{
+transition: all 0.5s ease;
+transform-style: preserve-3d;
+padding-left: 10px;
+color:white;
+background-color: black;
+opacity: 0.8;
+margin-left: 33.33%;
+margin-right: 45%;
+position: absolute;
+bottom: 250px;
+height: 390px;
+width: 530px;
+border: 2px solid white;
+font-family: calibri;
+font-size: 15px;
+box-shadow: 0 20px 20px rgba(250, 250, 255, 0.2);
+border-radius: 5px;
+perspective: 1000px;
+text-align: center;
+}
+
+.imgLink{
+  width: 45px;
+  height: auto;
+}
+
+
+.imgLink:hover{
+  width: 55px ;
+  height: auto;
+}
+
+.mb-3{
+  margin-bottom: 17px;
+}
+
+.btn-cv:hover{
+  background-color: rgb(98, 235, 98);
+}
+
+.btn-cv{
+  background-color: rgb(53, 223, 53);
+  color: white;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  border-radius: 3px;
+  padding: 10px;
+
+}
+
+
+ .lessec, .lesjour ,.lesminutes, .lesheures {
+  text-align: center;
+  display: inline-block;
+  margin: 10px;
+}
+
+.en_place{
+  margin-left: 12.5%;
+  border: 2px solid white;
+  width: 360px;
+  height: 130px;
+}
+
+.en_place p{
+color: white;
+font-family: nasa;
+}
+
+.text{
+font-family: code;
+font-size: 20px;
+text-align: center;
+}
+
+.votra{
+height: 80px;
+width: 50px;
+}
+
+.left, .right, .text{
+display: inline-block;
+
+}
+
+.left{
+  position: relative;
+  bottom: 10px;
+}
+
+.right{
+  position: relative;
+  left:380px;
+  bottom: 10px;
+
+}
+.test{
+  color: white;
+}
+.logo{
+  position: relative;
+  bottom:5px;
+  left: 10px;
+}
