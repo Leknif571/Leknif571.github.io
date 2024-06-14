@@ -66,19 +66,30 @@ h2{
 }
 
 .comp .left{
-    margin-left: 10%;
-    text-align: left;
-    border: 2px solid black;
-    padding: 3px;
-    background-color: rgb(219, 225, 242);
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 50px;
+    background-image: url('../sky.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
 }
 
+/* h2 {
+    border-radius: 50px;
+    padding: 2px;
+
+    background-color: rgb(255, 205, 3);
+    opacity: 0.7;
+} */
+
 .comp .right{
-    margin-right: 10%;
-    text-align: right;
-    border: 2px solid black;
-    padding: 3px;
-    background-color: rgb(240, 226, 226);
+    border-radius: 50px;
+    text-align: center;
+    border: 1px solid black;
+    padding: 2px;
+    background-color: rgb(246, 96, 80);
 }
 
 .textlink{   
@@ -119,7 +130,7 @@ p{
 }
 
 .comp{
-    padding-bottom: 5%;
+    /* padding-bottom: 5%; */
     text-align: center;
 }
 
@@ -143,7 +154,7 @@ p{
 }
 
 .titlePos{
-    margin-top: 5%;
+    margin-top: 2%;
 }
 
 .portfolio{
